@@ -1,3 +1,7 @@
-in the best case: O(n)
-in the average case: O(n^2)
-in the worst case: O(n^2)
+0-O
+
+Bubble Sort Algorithm Time Complexities:
+
+- Best Case: O(n)
+- Average Case: O(n^2)
+- Worst Case: O(n^2)
