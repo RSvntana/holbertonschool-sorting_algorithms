@@ -22,16 +22,16 @@ void insertion_sort_list(listint_t **list)
 
 		while (prev != NULL && prev->n > temp->n)
 		{
-			if (prev->prev != NULL)
-				prev->prev->next = temp;
-			else
-				*list = temp;
-
 			if (temp->next != NULL)
 				temp->next->prev = prev;
 
 			prev->next = temp->next;
 			temp->prev = prev->prev;
+
+			if (prev->prev != NULL)
+				prev->prev->next = temp;
+			else
+				*list = temp;
 
 			temp->next = prev;
 			prev->prev = temp;
